@@ -1,0 +1,13 @@
+<html>
+<head>
+<title>Reconcile CSVs</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+</head>
+<body>
+<form action="reconcile/" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Reconcile">
+</form>
+</body>
+</html>
