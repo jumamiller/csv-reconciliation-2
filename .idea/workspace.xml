@@ -5,22 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6467675a-6a15-44cb-aa2e-c5974ca2f9ec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/reconciler/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reconciler/utils/csv_reader.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/2023/12/13/Target_-_Sheet1.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/2023/12/13/Target_-_Sheet1_0cc7W6b.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/2023/12/13/Target_-_Sheet1_dFykAVn.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/2023/12/13/Target_-_Sheet1_mOM3pmV.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/2023/12/13/source_-_Sheet1.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/2023/12/13/source_-_Sheet1_Fo2xpx8.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/2023/12/13/source_-_Sheet1_GueAMN8.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/2023/12/13/source_-_Sheet1_SEJRRd2.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/uploader/comparison_result.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/2023/12/13/Target_-_Sheet1_3XXaiWo.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/2023/12/13/Target_-_Sheet1_AVjbLhu.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/2023/12/13/Target_-_Sheet1_EtRX6Ji.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/2023/12/13/Target_-_Sheet1_FCVNhyK.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/2023/12/13/Target_-_Sheet1_FPzeqrH.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/2023/12/13/Target_-_Sheet1_H1CE3Us.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/2023/12/13/Target_-_Sheet1_NIFZuP1.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/2023/12/13/Target_-_Sheet1_NNp7jh7.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/2023/12/13/Target_-_Sheet1_Oe5Bsri.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/2023/12/13/Target_-_Sheet1_gN1usqm.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/2023/12/13/Target_-_Sheet1_j9bGDXM.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/2023/12/13/Target_-_Sheet1_jBWSQR7.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/2023/12/13/Target_-_Sheet1_lYRQsb6.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/2023/12/13/Target_-_Sheet1_sRgTtGE.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/2023/12/13/source_-_Sheet1_3D5R0SB.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/2023/12/13/source_-_Sheet1_75iT8wg.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/2023/12/13/source_-_Sheet1_AaEjfAv.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/2023/12/13/source_-_Sheet1_D1DP0lg.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/2023/12/13/source_-_Sheet1_Ezr8kwt.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/2023/12/13/source_-_Sheet1_FB7bZzl.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/2023/12/13/source_-_Sheet1_FI6xN9f.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/2023/12/13/source_-_Sheet1_L5hZULb.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/2023/12/13/source_-_Sheet1_Ngn138a.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/2023/12/13/source_-_Sheet1_VRP82Vl.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/2023/12/13/source_-_Sheet1_iVCcYjN.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/2023/12/13/source_-_Sheet1_iZ5v1AW.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/2023/12/13/source_-_Sheet1_lElNI2c.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/2023/12/13/source_-_Sheet1_sWa2sCP.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reconciler/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/reconciler/migrations/0001_initial.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reconciler/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/reconciler/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reconciler/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/reconciler/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/reconciler/upload_file.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/reconciler/upload_file.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +130,8 @@
       <option name="presentableId" value="Default" />
       <updated>1702388755305</updated>
       <workItem from="1702388765583" duration="5614000" />
-      <workItem from="1702488836450" duration="2385000" />
+      <workItem from="1702488836450" duration="3970000" />
+      <workItem from="1702493956998" duration="876000" />
     </task>
     <servers />
   </component>

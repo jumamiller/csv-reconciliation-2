@@ -1,3 +1,4 @@
+import pandas as pd
 from django.http import request
 from django.shortcuts import render, redirect
 
@@ -10,21 +11,34 @@ def upload_file(request):
         if form.is_valid():
             try:
                 uploaded_file = form.save()
-                # src file_path
-                source_file_path = uploaded_file.source_file.path
-                df_source = read_source_file(source_file_path)
-                # target file_path
-                target_file_path = uploaded_file.target_file.path
-                df_target = read_target_file(target_file_path)
-                mismatched_columns = set(df_source.columns) ^ set(df_target.columns)
-                # save the result to a new csv file
-                if not mismatched_columns:
-                    print("The source file has the same columns as the target file.")
-                else:
-                    print("Mismatched columns:")
-                    print(mismatched_columns)
-                return redirect('upload_success')
+                # Read CSV files
+                source_df = pd.read_csv(uploaded_file.source_file.path)
+                target_df = pd.read_csv(uploaded_file.target_file.path)
+
+                # Identify the unique column
+                unique_column = source_df.columns[0]
+
+                # Strip leading and trailing spaces from column names
+                source_df.columns = source_df.columns.str.strip()
+                target_df.columns = target_df.columns.str.strip()
+
+                # Identify records present in the source but missing in the target
+                missing_in_target = source_df[~source_df[unique_column].isin(target_df[unique_column])]
+
+                # Identify records present in the target but missing in the source
+                missing_in_source = target_df[~target_df[unique_column].isin(source_df[unique_column])]
+
+                # Convert DataFrames to HTML tables for display
+                missing_in_target_html = missing_in_target.to_html()
+                missing_in_source_html = missing_in_source.to_html()
+
+                return render(request, 'uploader/comparison_result.html', {
+                    'missing_in_target': missing_in_target_html,
+                    'missing_in_source': missing_in_source_html,
+                })
+
             except Exception as e:
+                #trace error
                 print(e)
     else:
         form = FileUploadForm()
