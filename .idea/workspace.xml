@@ -5,16 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6467675a-6a15-44cb-aa2e-c5974ca2f9ec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reconciler/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/reconciler/upload_file.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/reconciler/upload_success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/credrails.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/credrails.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reconciler/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reconciler/utils/csv_reader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/2023/12/13/Target_-_Sheet1.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/2023/12/13/Target_-_Sheet1_0cc7W6b.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/2023/12/13/Target_-_Sheet1_dFykAVn.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/2023/12/13/Target_-_Sheet1_mOM3pmV.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/2023/12/13/source_-_Sheet1.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/2023/12/13/source_-_Sheet1_Fo2xpx8.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/2023/12/13/source_-_Sheet1_GueAMN8.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/2023/12/13/source_-_Sheet1_SEJRRd2.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/credrails/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/credrails/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reconciler/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/reconciler/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reconciler/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/reconciler/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reconciler/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/reconciler/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reconciler/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/reconciler/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reconciler/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/reconciler/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/reconciler/upload_file.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/reconciler/upload_file.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,10 +40,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2ZRdJK5kvgQLI6R15ZPQnm6cjUh" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -46,24 +52,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Django Server.credrails.executor": "Run",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "django.template.preview.state": "SHOW_EDITOR_AND_PREVIEW",
-    "git-widget-placeholder": "development",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Django Server.credrails.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR_AND_PREVIEW&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;development&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="credrails" type="Python.DjangoServer" factoryName="Django server">
       <module name="credrails" />
@@ -106,7 +112,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1702388755305</updated>
-      <workItem from="1702388765583" duration="4956000" />
+      <workItem from="1702388765583" duration="5614000" />
+      <workItem from="1702488836450" duration="2385000" />
     </task>
     <servers />
   </component>
