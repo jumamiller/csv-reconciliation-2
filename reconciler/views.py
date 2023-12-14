@@ -10,7 +10,6 @@ def upload_file(request):
         if form.is_valid():
             try:
                 uploaded_file = form.save()
-
                 # Read CSV files
                 source_df = pd.read_csv(uploaded_file.source_file.path)
                 target_df = pd.read_csv(uploaded_file.target_file.path)

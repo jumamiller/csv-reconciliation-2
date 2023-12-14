@@ -3,6 +3,7 @@
 <html>
 <head>
     <title>Comparison Result</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
 </head>
 <body>
     <h2>Comparison Result</h2>
@@ -14,6 +15,6 @@
     {{ missing_in_source|safe }}
 
     <h3>Discrepancies in common records:</h3>
-    {{ discrepancies|safe }}
+    {{ field_discrepancies|safe }}
 </body>
 </html>
