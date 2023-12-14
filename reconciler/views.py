@@ -1,8 +1,9 @@
 import pandas as pd
-from django.shortcuts import render, redirect
-from pandas.testing import assert_frame_equal
+from django.shortcuts import render
 
 from reconciler.forms import FileUploadForm
+from reconciler.utils.csv_reader import reconcile_uploaded_files
+
 
 def upload_file(request):
     if request.method == 'POST':
@@ -10,24 +11,12 @@ def upload_file(request):
         if form.is_valid():
             try:
                 uploaded_file = form.save()
-                # Read CSV files
-                source_df = pd.read_csv(uploaded_file.source_file.path)
-                target_df = pd.read_csv(uploaded_file.target_file.path)
 
-                # Strip leading and trailing spaces from column names
-                source_df.columns = source_df.columns.str.strip()
-                target_df.columns = target_df.columns.str.strip()
-
-                # Identify records present in the source but missing in the target
-                missing_in_target = source_df[~source_df.isin(target_df.to_dict(orient='list')).all(axis=1)]
-
-                # Identify records present in the target but missing in the source
-                missing_in_source = target_df[~target_df.isin(source_df.to_dict(orient='list')).all(axis=1)]
-
-                # Identify records with field discrepancies
-                df_dff = source_df.compare(target_df)
-                field_discrepancies = df_dff[df_dff.ne(0).any(axis=1)]
-
+                # Call the utility function
+                source_path = uploaded_file.source_file.path
+                target_path = uploaded_file.target_file.path
+                missing_in_target, missing_in_source, field_discrepancies = reconcile_uploaded_files(source_path,
+                                                                                                     target_path)
                 # Convert DataFrames to HTML tables for display
                 missing_in_target_html = missing_in_target.to_html()
                 missing_in_source_html = missing_in_source.to_html()
