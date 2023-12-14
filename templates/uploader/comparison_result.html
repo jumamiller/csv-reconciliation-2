@@ -1,0 +1,19 @@
+<!-- uploader/templates/uploader/comparison_result.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Comparison Result</title>
+</head>
+<body>
+    <h2>Comparison Result</h2>
+
+    <h3>Records missing in the target file:</h3>
+    {{ missing_in_target|safe }}
+
+    <h3>Records missing in the source file:</h3>
+    {{ missing_in_source|safe }}
+
+    <h3>Discrepancies in common records:</h3>
+    {{ discrepancies|safe }}
+</body>
+</html>
