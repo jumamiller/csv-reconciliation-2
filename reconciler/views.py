@@ -1,4 +1,3 @@
-import pandas as pd
 from django.shortcuts import render
 
 from reconciler.forms import FileUploadForm
